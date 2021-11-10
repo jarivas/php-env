@@ -1,4 +1,6 @@
 {
+    "name": "jarivas/php-env",
+    "description": "A simple and lightweight env manager",
     "require-dev": {
         "phpunit/phpunit": "^9.5"
     },
