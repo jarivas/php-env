@@ -63,7 +63,7 @@ class EnvManager
 
         $content = file_get_contents($filename);
 
-        $content = preg_replace('/#.+/', '', $content);
+        $content = preg_replace('/^#.+/', '', $content);
 
         preg_match_all('/(.+)=(.+)/', $content, $matches);
 
