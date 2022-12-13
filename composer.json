@@ -2,7 +2,7 @@
   "name": "jarivas/php-env",
   "description": "A simple and lightweight env manager",
   "type": "library",
-  "license": "GNU3",
+  "license": "GPL-3.0-or-later",
   "require-dev": {
     "phpunit/phpunit": "^9.5"
   },
