@@ -95,7 +95,7 @@ class EnvManager
             $value = preg_replace('/"/', '', $value);
         }
 
-        return ($value != 'null') ? $value : '';
+        return ($value != 'null') ? trim($value) : '';
     }
 
     protected static function parseEnvVars(string &$value): void
@@ -115,7 +115,7 @@ class EnvManager
 
         for ($i = 0 ;$i < $max; ++$i) {
             $varValue = self::get($keys[$i]);
-            $value = str_replace($replace[$i], $varValue, $value);
+            $value = trim(str_replace($replace[$i], $varValue, $value));
         }
     }
 }
